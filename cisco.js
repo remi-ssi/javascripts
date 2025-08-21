@@ -1,14 +1,15 @@
-let singleRose = 8;
-let singleLily = 10;
-let singleTulip = 2;
-let roses = 70;
-let lilies = 50;
-let tulips = 120;
-let totalRose = singleRose * roses;
-let totalLily = singleLily * lilies;
-let totalTulips = singleTulip * tulips;
+const person1 = "Maxwell Wright";
+const person2 = "Raja Villarreal";
+const person3 =" Helen Richards;" 
 
-console.log(`Rose - unit price: ${singleRose}, quantity: ${roses}. value: ${totalRose}`);
-console.log(`Lily - unit price: ${singleLily}, quantity: ${lilies}, value: ${totalLily}`);
-console.log(`Tulip - unit price: ${singleTulip}, quantity: ${tulips}, value: ${totalTulips}`)
-console.log(`Total:  ${totalRose + totalLily + totalTulips}`);
+let phone1 = "(0191)7196495";
+let phone2 = "08663982895";
+let phone3 = "08001111";
+
+let email1 = "email1@gmail.com";
+let email2 = "email2@gmail.com";
+let email3 = "email3@gmail.com";
+
+console.log(person1, phone1, email1);
+console.log(person2, phone2, email2);
+console.log(person3, phone3, email3);
