@@ -1,15 +1,13 @@
-const person1 = "Maxwell Wright";
-const person2 = "Raja Villarreal";
-const person3 =" Helen Richards;" 
+let ticket = {from:"Manila", to: "Laguna", price: 200}
 
-let phone1 = "(0191)7196495";
-let phone2 = "08663982895";
-let phone3 = "08001111";
+console.log(ticket)
+console.log("The ticket is from: " , ticket.from)
+console.log(`The ticket is to ${ticket.to}`)
+console.log(`The price is ${ticket.price}`)
 
-let email1 = "email1@gmail.com";
-let email2 = "email2@gmail.com";
-let email3 = "email3@gmail.com";
+let person = {};
+person.name = "reymie";
+person.surname = "gonzaga";
+console.log(person)
+console.log(`Hi I am ${person.surname}, ${person.name}`);
 
-console.log(person1, phone1, email1);
-console.log(person2, phone2, email2);
-console.log(person3, phone3, email3);
