@@ -11,3 +11,7 @@ person.surname = "gonzaga";
 console.log(person)
 console.log(`Hi I am ${person.surname}, ${person.name}`);
 
+let books = [["Speaking Javascript"," Axel Rauschmayer", 460], ["Programming Javascript Applications", "Eric Elliot", 254], ["Understanding ECMAScript", "NIckolas Zakas", 352]];
+
+books.push (["Learning Javascript Design Patterns", "Addy Osmani", 254]);
+console.log(books)
