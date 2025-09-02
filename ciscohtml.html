@@ -1,12 +1,27 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cisco HTML Example</title>
-        <script src="practice.js"></script>
-    </head>
-    <body>
-        <img src="logo.png" alt="Logo">
-    </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>alert() vs console.log()</title>
+</head>
+<body>
+  <h2>Testing alert() and console.log()</h2>
+  <button onclick="showMessages()">Click Me!</button>
+
+  <script>
+    function showMessages() {
+      // This shows a popup to the user
+      alert("Hello! This is an alert.");
+
+      // This only shows in the browser console (F12 → Console tab)
+      console.log("Hello! This is a console.log message.");
+
+      // Another example: testing variables
+      let a = 5;
+      let b = 10;
+      alert("The sum is " + (a + b));   // user sees popup
+      console.log("The sum is", a + b); // developer sees in console
+    }
+  </script>
+</body>
 </html>
