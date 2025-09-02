@@ -1,17 +1,25 @@
-let ticket = {from:"Manila", to: "Laguna", price: 200}
+let contacts = [{
+name: "Maxwell Wright",
+phone: "(0191) 719 6495",
+email: "Curabitur.egestas.nunc@nonummyac.co.uk"
+}, {
+name: "Raja Villarreal",
+phone: "0866 398 2895",
+email: "posuere.vulputate@sed.com"
+}, {
+name: "Helen Richards",
+phone: "0800 1111",
+email: "libero@convallis.edu"
+}];
 
-console.log(ticket)
-console.log("The ticket is from: " , ticket.from)
-console.log(`The ticket is to ${ticket.to}`)
-console.log(`The price is ${ticket.price}`)
+// write your
+let addCName = prompt("Contact Name");
+let addCPhone = prompt("Contact Phone Number: ");
+let addCEmail = prompt("Contact Email: ");
 
-let person = {};
-person.name = "reymie";
-person.surname = "gonzaga";
-console.log(person)
-console.log(`Hi I am ${person.surname}, ${person.name}`);
+contacts.push({name:addCName, phone:addCPhone, email:addCEmail});
 
-let books = [["Speaking Javascript"," Axel Rauschmayer", 460], ["Programming Javascript Applications", "Eric Elliot", 254], ["Understanding ECMAScript", "NIckolas Zakas", 352]];
+let last = contacts.length - 1;
 
-books.push (["Learning Javascript Design Patterns", "Addy Osmani", 254]);
-console.log(books)
+console.log(`${contacts[0].name} / ${contacts[0].phone} / ${contacts[0].email}`);
+console.log(`${contacts[last].name} / ${contacts[last].phone} / ${contacts[last].email}`);

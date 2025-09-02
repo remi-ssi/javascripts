@@ -2,25 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>alert() vs console.log()</title>
+  <title>Prompt vs Alert vs Confirm</title>
 </head>
 <body>
-  <h2>Testing alert() and console.log()</h2>
-  <button onclick="showMessages()">Click Me!</button>
+  <h2>Prompt, Alert, and Confirm Example</h2>
+  <button onclick="showDialogs()">Try It</button>
 
   <script>
-    function showMessages() {
-      // This shows a popup to the user
-      alert("Hello! This is an alert.");
+    function showDialogs() {
+      // 🔹 1. alert() - simple popup message
+      alert("Welcome! This is an alert box.");
 
-      // This only shows in the browser console (F12 → Console tab)
-      console.log("Hello! This is a console.log message.");
+      // 🔹 2. prompt() - asks for user input
+      let name = prompt("What is your name?", "Guest");
+      alert("You entered: " + name);
 
-      // Another example: testing variables
-      let a = 5;
-      let b = 10;
-      alert("The sum is " + (a + b));   // user sees popup
-      console.log("The sum is", a + b); // developer sees in console
+      // 🔹 3. confirm() - asks for Yes/No (OK/Cancel)
+      let isSure = confirm("Do you want to continue?");
+      
+      if (isSure) {
+        alert("You clicked OK. Continuing...");
+      } else {
+        alert("You clicked Cancel. Stopping...");
+      }
+
+      // 🔹 Also log results to console
+      console.log("Name entered:", name);
+      console.log("Confirm result:", isSure);
     }
   </script>
 </body>
